@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="es-CO" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Temario completo y capítulo de muestra — Cómo ser un Data Engineer</title>
+<meta name="description" content="Índice completo de los 51 capítulos y las 12 partes de «Cómo ser un Data Engineer», más un capítulo de muestra gratuito. Por Luis Galvis." />
+<meta name="theme-color" content="#010102" />
+<link rel="canonical" href="https://luisgalvis.dev/muestra.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Temario completo — Cómo ser un Data Engineer" />
+<meta property="og:description" content="Los 51 capítulos, las 12 partes y un capítulo de muestra gratis." />
+<meta property="og:image" content="assets/img/og-image.jpg" />
+<link rel="icon" href="assets/img/favicon.png" sizes="256x256" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  .doc { padding: calc(var(--nav-h) + 56px) 0 80px; }
+  .doc__head { max-width: 760px; margin-bottom: 48px; }
+  .doc h1 {
+    font-size: clamp(32px, 5vw, 56px); font-weight: 600;
+    letter-spacing: -0.032em; line-height: 1.06; margin-bottom: 16px; color: var(--ink);
+  }
+  .doc h1 em { font-style: normal; color: var(--primary-hover); }
+  .doc h2 {
+    font-size: clamp(22px, 2.6vw, 30px); font-weight: 600; letter-spacing: -0.021em;
+    margin: 56px 0 18px; padding-top: 32px; border-top: 1px solid var(--hairline);
+  }
+  .doc h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  .doc p { color: var(--ink-subtle); font-size: 16px; line-height: 1.7; margin-bottom: 16px; max-width: 68ch; }
+  .doc p strong { color: var(--ink); font-weight: 500; }
+  .doc blockquote {
+    margin: 0 0 20px; padding: 20px 22px; max-width: 68ch;
+    border: 1px solid var(--hairline); border-left: 2px solid var(--primary);
+    border-radius: 0 var(--r-lg) var(--r-lg) 0;
+    background: var(--surface-1);
+    font-size: 17px; line-height: 1.6; color: var(--ink-muted);
+  }
+  .doc blockquote cite {
+    display: block; margin-top: 10px; font-family: var(--mono); font-size: 11px;
+    letter-spacing: .04em; text-transform: uppercase; color: var(--ink-tertiary); font-style: normal;
+  }
+
+  .toc { border-top: 1px solid var(--hairline); margin-top: 8px; }
+  .toc__part {
+    padding: 20px 0 6px; font-family: var(--mono); font-size: 11px;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--primary-hover);
+  }
+  .toc__row {
+    display: grid; grid-template-columns: 74px 1fr; gap: 14px;
+    padding: 10px 0; border-bottom: 1px solid var(--hairline);
+    align-items: baseline;
+  }
+  .toc__n { font-family: var(--mono); font-size: 11.5px; color: var(--ink-tertiary); }
+  .toc__t { font-size: 15px; color: var(--ink-muted); line-height: 1.5; }
+
+  .shade {
+    border: 1px solid var(--hairline); border-radius: var(--r-lg);
+    padding: 24px; background: var(--surface-1);
+  }
+  .note {
+    margin: 24px 0; padding: 16px 18px; border-radius: var(--r-lg);
+    border: 1px solid rgba(94, 106, 210, .35); background: rgba(94, 106, 210, .1);
+    font-size: 14px; color: var(--ink-muted);
+  }
+  .doc__cta { margin-top: 48px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+  @media (max-width: 620px) {
+    .toc__row { grid-template-columns: 60px 1fr; gap: 10px; }
+    .toc__t { font-size: 14px; }
+    .doc__cta .btn { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav is-stuck">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Volver a la landing">
+      <span class="brand__text">Luis Galvis</span>
+    </a>
+    <div class="nav__right">
+      <a class="btn btn--ghost btn--sm" href="index.html">&larr; Volver</a>
+      <a class="btn btn--primary btn--sm" href="https://wa.me/573204545796?text=Hola%20Luis%2C%20quiero%20el%20libro%20%C2%ABC%C3%B3mo%20ser%20un%20Data%20Engineer%C2%BB%20(las%20dos%20ediciones%2C%20%2440.000).">Comprar el libro</a>
+    </div>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap wrap--narrow">
+
+    <div class="doc__head">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> Muestra gratuita</p>
+      <h1>Temario completo y<br /><em>un capítulo de regalo.</em></h1>
+      <p class="lead" style="font-size:18px">
+        Esto es exactamente lo que hay dentro: las 12 partes, los 51 capítulos y un fragmento real
+        del capítulo 0 para que decidas con el texto en la mano y no con una promesa.
+      </p>
+    </div>
+
+    <h2>Capítulo de muestra · El acueducto invisible</h2>
+
+    <p>
+      <em>(Fragmento de la sección 0.0 del libro, reproducido íntegro.)</em>
+    </p>
+
+    <blockquote>
+      Imagina abrir el grifo de tu cocina y recibir agua potable limpia, a presión constante y sin
+      interrupciones. No piensas en los kilómetros de tuberías subterráneas, las plantas de tratamiento
+      químico, los tanques de decantación ni las bombas de presión que evitan que la red colapse.
+      <cite>Capítulo 0 · Intuición inicial</cite>
+    </blockquote>
+
+    <p>
+      En una empresa contemporánea, el analista de negocio y los tableros de <strong>Power BI</strong>
+      son como ese grifo: esperan abrir una herramienta analítica y observar números limpios, coherentes
+      y actualizados al segundo. Sin embargo, detrás de esa interfaz existe un torrente de datos caótico:
+      bases de datos transaccionales saturadas, archivos JSON semiestructurados con formatos rotos,
+      registros de clientes duplicados y millones de eventos por segundo llegando desde aplicaciones móviles.
+    </p>
+
+    <p>
+      <strong>El Ingeniero de Datos es el profesional que diseña, construye, monitorea y repara esa
+      gigantesca red de acueductos digitales.</strong> Su misión no es contemplar el agua en el vaso,
+      sino garantizar que la información fluya desde los sistemas de origen hacia los destinos analíticos
+      de forma pura, oportuna y sin inundar los sistemas operativos. Si un pipeline falla a las 3:00 de
+      la madrugada, es el Data Engineer quien recibe la alerta y subsana el problema antes de que los
+      tomadores de decisiones inicien su jornada laboral.
+    </p>
+
+    <p>
+      Cada capítulo del libro cierra con preguntas de revisión, ejercicios resueltos, anti-patrones y
+      consideraciones de producción. No hay secciones de relleno y no hay ejercicios sin respuesta.
+    </p>
+
+    <h2>Las 12 partes del libro</h2>
+
+    <div class="toc">
+      <p class="toc__part">Parte I · Panorama y fundamentos de la profesión</p>
+      <div class="toc__row"><span class="toc__n">Cap. 00</span><span class="toc__t">Data Engineering Roadmap y panorama de la profesión</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 00A</span><span class="toc__t">Cimientos de plataforma: Linux, Git, Docker y redes</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 00B</span><span class="toc__t">Bases de datos relacionales (OLTP) y modelado transaccional</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 00C</span><span class="toc__t">Python para ingeniería de datos: tipado, APIs y resiliencia</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 00D</span><span class="toc__t">Entorno de laboratorio reproducible y generación de datos</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 01</span><span class="toc__t">Fundamentos de SQL declarativo y computación analítica</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 02</span><span class="toc__t">Agrupaciones multidimensionales, window functions y optimización</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 02A</span><span class="toc__t">DuckDB y cómputo in-process: cuándo no usar computación distribuida</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 02B</span><span class="toc__t">Algoritmos y estructuras de datos esenciales para Data Engineers</span></div>
+
+      <p class="toc__part">Parte II · Computación distribuida con Apache Spark</p>
+      <div class="toc__row"><span class="toc__n">Cap. 03</span><span class="toc__t">De Hadoop y MapReduce a Apache Spark</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 04</span><span class="toc__t">Arquitectura del clúster: driver, workers y ejecutores</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 05</span><span class="toc__t">Configuración del entorno y SparkSession</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 06</span><span class="toc__t">Abstracciones fundamentales: de RDD a DataFrames</span></div>
+
+      <p class="toc__part">Parte III · Ingesta, formatos y modelado de esquemas</p>
+      <div class="toc__row"><span class="toc__n">Cap. 07</span><span class="toc__t">Ingesta de archivos: CSV, JSON y JDBC</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 08</span><span class="toc__t">Formatos de archivo: Parquet, ORC y Avro</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 09</span><span class="toc__t">Tipos de datos, esquemas y operaciones de casting</span></div>
+
+      <p class="toc__part">Parte IV · Transformación con la API DataFrame</p>
+      <div class="toc__row"><span class="toc__n">Cap. 10</span><span class="toc__t">Filtrado, selección y condicionales en DataFrames</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 11</span><span class="toc__t">Transformaciones estructurales y manipulación de esquemas</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 12</span><span class="toc__t">Joins distribuidos y estrategias de cruce</span></div>
+
+      <p class="toc__part">Parte V · El motor interno y la optimización en Spark</p>
+      <div class="toc__row"><span class="toc__n">Cap. 13</span><span class="toc__t">Evaluación perezosa (lazy evaluation) y el grafo DAG</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 14</span><span class="toc__t">El optimizador Catalyst y Spark SQL</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 15</span><span class="toc__t">Gestión de memoria, persistencia y caché</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 16</span><span class="toc__t">Particionado, shuffling y mitigación de skew</span></div>
+
+      <p class="toc__part">Parte VI · Arquitectura Lakehouse y transacciones ACID</p>
+      <div class="toc__row"><span class="toc__n">Cap. 17</span><span class="toc__t">Arquitectura medallón y modelado dimensional</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 18</span><span class="toc__t">Lakehouse y formatos de tabla abiertos: Delta Lake e Iceberg</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 18A</span><span class="toc__t">Plataforma Databricks: Delta Live Tables, Photon y Workflows</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 19</span><span class="toc__t">Gobernanza, linaje y Unity Catalog</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 20</span><span class="toc__t">Catalogación, descubrimiento y contratos de datos</span></div>
+
+      <p class="toc__part">Parte VII · Procesamiento en tiempo real</p>
+      <div class="toc__row"><span class="toc__n">Cap. 21</span><span class="toc__t">Fundamentos de streaming y Apache Kafka</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 22</span><span class="toc__t">Spark Structured Streaming y Change Data Capture</span></div>
+
+      <p class="toc__part">Parte VIII · Orquestación, modelado y DataOps</p>
+      <div class="toc__row"><span class="toc__n">Cap. 23</span><span class="toc__t">Orquestación de flujos: Apache Airflow y Azure Data Factory</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 23A</span><span class="toc__t">Airflow avanzado: KubernetesExecutor, Airflow 3.0 y deferrable operators</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 24</span><span class="toc__t">Transformación modular con dbt, snapshots e idempotencia</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 25</span><span class="toc__t">Infraestructura como código con Terraform y OpenTofu</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 26</span><span class="toc__t">Integración y despliegue continuo para pipelines de datos</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 26A</span><span class="toc__t">Pruebas de software en datos: pytest, Chispa y Testcontainers</span></div>
+
+      <p class="toc__part">Parte IX · Observabilidad y calidad de datos</p>
+      <div class="toc__row"><span class="toc__n">Cap. 27</span><span class="toc__t">Observabilidad, monitoreo y logging en sistemas distribuidos</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 28</span><span class="toc__t">Calidad de datos y validación automatizada con Great Expectations</span></div>
+
+      <p class="toc__part">Parte X · Cloud, plataformas, system design e IA</p>
+      <div class="toc__row"><span class="toc__n">Cap. 29</span><span class="toc__t">Cloud data architecture y optimización de costos (FinOps)</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 29A</span><span class="toc__t">Microsoft Fabric y OneLake</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 29B</span><span class="toc__t">Arquitectura de datos en AWS: S3, Glue, EMR, Athena y Redshift</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 29C</span><span class="toc__t">Arquitectura de datos en Google Cloud: BigQuery, Dataflow y Pub/Sub</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 29D</span><span class="toc__t">Snowflake empresarial: multi-cluster, Snowpark y Polaris Catalog</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 30</span><span class="toc__t">System design y preparación para entrevistas senior</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 31</span><span class="toc__t">Seguridad, privacidad y gobernanza regulatoria de datos</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 32</span><span class="toc__t">Bases de datos NoSQL y motores especializados</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 33</span><span class="toc__t">Ingeniería de datos para inteligencia artificial y LLMs</span></div>
+
+      <p class="toc__part">Parte XI · Proyecto integrador</p>
+      <div class="toc__row"><span class="toc__n">Cap. 34</span><span class="toc__t">Proyecto integrador: plataforma Lakehouse de extremo a extremo</span></div>
+
+      <p class="toc__part">Parte XII · Apéndices y epílogo</p>
+      <div class="toc__row"><span class="toc__n">Cap. 35</span><span class="toc__t">Apéndice A · Glosario enciclopédico de términos y siglas (A–Z)</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 36</span><span class="toc__t">Apéndice B · Estimaciones de escala, fórmulas y cheatsheet senior</span></div>
+      <div class="toc__row"><span class="toc__n">Cap. 37</span><span class="toc__t">Epílogo · El futuro de la ingeniería de datos</span></div>
+    </div>
+
+    <div class="note">
+      <strong>Nota de transparencia:</strong> los capítulos 08 y 12 nacieron como material nuevo, no como
+      apuntes previos, y están redactados con la misma estructura que el resto: objetivos, teoría,
+      código ejecutable, ejercicios resueltos y anti-patrones.
+    </div>
+
+    <h2>El laboratorio que acompaña al texto</h2>
+    <div class="shade">
+      <p style="margin-bottom:0">
+        Todo el código del libro vive en un repositorio con licencia MIT: una plataforma en Docker Compose
+        con PostgreSQL 16, MinIO como almacenamiento compatible con S3, Apache Spark 3.5.3 y DuckDB,
+        más ocho datasets generados de forma determinista con <span class="mono">seed=42</span> y una
+        suite de pruebas con <span class="mono">pytest</span>.
+      </p>
+    </div>
+
+    <div class="doc__cta">
+      <a class="btn btn--primary" href="https://wa.me/573204545796?text=Hola%20Luis%2C%20quiero%20el%20libro%20%C2%ABC%C3%B3mo%20ser%20un%20Data%20Engineer%C2%BB%20(las%20dos%20ediciones%2C%20%2440.000).">Quiero el libro completo · $40.000
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--secondary" href="https://github.com/Luis-galvis/como-ser-un-data-engineer" target="_blank" rel="noopener">Ver el repositorio</a>
+      <a class="btn btn--ghost" href="index.html">Volver a la página principal</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__legal" style="border:0;padding-top:0">
+      <p>© <span id="year">2026</span> Luis Galvis. Texto y contenido: todos los derechos reservados.</p>
+      <p>Muestra de cortesía para evaluación. Prohibida su reventa.</p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
